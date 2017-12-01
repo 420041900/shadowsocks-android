@@ -1,6 +1,6 @@
 #!/bin/bash
 # setup ANDROID_HOME for sbt-android plugin
-export ANDROID_HOME=/home/daniel/android/tools/sdk
+export ANDROID_HOME=$HOME/android/tools/sdk
 
 # ANDROID_NDK_HOME can be automatically setup by android sdk if this is empty
 #ANDROID_NDK_HOME to /path/to/android-ndk
@@ -24,5 +24,6 @@ cd mobile/src/main/jni/shadowsocks-libev
 git submodule init
 git submodule update
 
+cd ../../../../../
 # Build the App
 sbt clean go-build android:package-release

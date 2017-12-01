@@ -59,7 +59,7 @@ export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
 echo "Get dependences for overture"
 go get -u github.com/tools/godep
 
-pushd $GOPATH/src/github.com/shadowsocks/overture/main
+pushd $GOPATH/src/github.com/rockon9sky/overture/main
 godep restore
 
 echo "Cross compile overture for arm"
